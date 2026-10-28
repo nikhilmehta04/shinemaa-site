@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SHINEMAA Consults</title>
+<meta name="description" content="Viral content, an inbox full of leads, and how to sell. A 90-day programme by Nikhil.">
+<meta property="og:title" content="SHINEMAA Consults">
+<meta property="og:description" content="Viral content, an inbox full of leads, and how to sell.">
+<meta property="og:image" content="nikhil.jpg">
+<style>
+  :root{
+    --cream:#FAF7F0; --ink:#111111; --gold:#E9A319; --muted:#6B665C; --line:#E6E0D3;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--cream);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  .kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700}
+  h1,h2{font-weight:700;letter-spacing:-.02em;line-height:1.08}
+  h2{font-size:clamp(28px,4.4vw,44px);margin:10px 0 18px}
+  p{max-width:62ch}
+  .btn{display:inline-block;background:var(--gold);color:var(--ink);text-decoration:none;font-weight:700;padding:16px 26px;border-radius:999px;transition:transform .25s ease,box-shadow .25s ease}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(233,163,25,.35)}
+  .btn.ghost{background:transparent;border:1.5px solid currentColor;color:inherit}
+  section{padding:84px 0;border-top:1px solid var(--line)}
+
+  /* nav */
+  nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+  .logo{font-weight:800;letter-spacing:.08em;font-size:15px}
+  .logo span{color:var(--gold)}
+  nav a.small{font-size:14px;color:var(--ink);text-decoration:none;font-weight:600}
+
+  /* hero */
+  .hero{background:var(--ink);color:var(--cream)}
+  .hero nav .logo, .hero nav a.small{color:var(--cream)}
+  .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center;padding:56px 0 96px}
+  .hero h1{font-size:clamp(36px,6vw,64px);margin:14px 0 20px}
+  .hero p.sub{font-size:clamp(17px,2vw,20px);color:#D9D4C8;margin-bottom:32px}
+  .hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+  .hero img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px;filter:grayscale(.1)}
+
+  /* proof */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
+  .stat{border:1px solid var(--line);border-radius:14px;padding:22px;background:#fff}
+  .stat b{display:block;font-size:34px;letter-spacing:-.02em}
+  .stat span{font-size:14px;color:var(--muted)}
+  .cases{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:20px}
+  .case{background:var(--ink);color:var(--cream);border-radius:14px;padding:26px}
+  .case .big{font-size:30px;font-weight:700;color:var(--gold);letter-spacing:-.02em;margin:10px 0}
+  .case p{color:#D9D4C8;font-size:15px}
+
+  /* lists */
+  .list{list-style:none;margin-top:22px;display:grid;gap:12px;max-width:720px}
+  .list li{padding:16px 18px;background:#fff;border:1px solid var(--line);border-radius:12px}
+  .list li::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gold);margin-right:12px;vertical-align:middle}
+
+  /* story */
+  .story{display:grid;grid-template-columns:.7fr 1.3fr;gap:48px;align-items:start}
+  .story img{width:100%;border-radius:16px;position:sticky;top:24px}
+  .story p{margin-bottom:16px;font-size:17px}
+
+  /* final */
+  .final{background:var(--ink);color:var(--cream);text-align:center}
+  .final p{margin:0 auto 28px;color:#D9D4C8;font-size:18px}
+  .final .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  footer{padding:28px 0;font-size:13px;color:var(--muted);text-align:center}
+
+  /* motion */
+  .rise{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+  .rise.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.rise{opacity:1;transform:none;transition:none}}
+
+  @media (max-width:820px){
+    .hero-grid,.story{grid-template-columns:1fr}
+    .hero-grid{padding:28px 0 64px;gap:32px}
+    .hero img{max-width:340px}
+    .stats{grid-template-columns:1fr 1fr}
+    .cases{grid-template-columns:1fr}
+    .story img{position:static;max-width:340px}
+    section{padding:64px 0}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <nav>
+      <div class="logo">SHINEMAA<span>.</span></div>
+      <a class="small" href="https://www.instagram.com/shi.nemaa__/">@shi.nemaa__</a>
+    </nav>
+    <div class="hero-grid">
+      <div>
+        <!-- HERO: placeholder built from Nikhil's own existing lines.
+             Replace after running the Hero Sections That Sell session (he writes the final version). -->
+        <div class="kicker">For people with a skill</div>
+        <h1>Create content and fill your inbox with leads that make you money.</h1>
+        <p class="sub">My 90-day programme. Viral content, an inbox full of leads, and how to sell.</p>
+        <div class="ctas">
+          <a class="btn" href="https://ig.me/m/shi.nemaa__">DM me FILMS</a>
+          <a class="btn ghost" href="#proof">See the results</a>
+        </div>
+      </div>
+      <img src="nikhil.jpg" alt="Nikhil, founder of SHINEMAA Consults">
+    </div>
+  </div>
+</header>
+
+<section id="proof">
+  <div class="wrap">
+    <div class="kicker">Proof</div>
+    <h2>Same reel. Only the hook changed.</h2>
+    <p>Sukhi is a fitness coach based in Australia. On the second day of his programme he posted a reel which only got 2,700 views. I sent him a voice note. He posted the same reel again, just the text changed as I told him, and it went to 111K.</p>
+    <div class="cases">
+      <div class="case">
+        <div class="kicker">Sukhi · fitness coach</div>
+        <div class="big">2,700 → 111K</div>
+        <p>Same reel. Joined the programme just 1 day before.</p>
+      </div>
+      <div class="case">
+        <div class="kicker">Astrologer · first client</div>
+        <div class="big">0 → 100K</div>
+        <p>Followers in 16 weeks. Reels in the millions.</p>
+      </div>
+      <div class="case">
+        <div class="kicker">Immigration consultant</div>
+        <div class="big">100+ DMs</div>
+        <p>Every month, from people asking for his services.</p>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>9M</b><span>views on my own video</span></div>
+      <div class="stat"><b>8.9M</b><span>views</span></div>
+      <div class="stat"><b>8.7M</b><span>views</span></div>
+      <div class="stat"><b>5M</b><span>views</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Who it is for</div>
+    <h2>Creators who are trying, but it is not working yet.</h2>
+    <p>This is for creators who are trying to create but are not able to stay consistent and not able to go viral. They have a real skill, and they believe they can make money through it. And they are struggling to make money from it. I help them with all of it through my systems and my accountability.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">The method</div>
+    <h2>The 7-day viral method.</h2>
+    <p>You use my systems and my processes to post continuously for 7 days.</p>
+    <ul class="list">
+      <li>One-on-one calls with me every two weeks.</li>
+      <li>The exact processes on how to make your reels viral.</li>
+      <li>Workshops on branding, how to shoot, how to write hooks, everything.</li>
+      <li>Access to the community.</li>
+      <li>You are held accountable for every post.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap story">
+    <img src="nikhil.jpg" alt="Nikhil">
+    <div>
+      <div class="kicker">Hi, I'm Nikhil</div>
+      <h2>Why I do this.</h2>
+      <p>I left home at the age of 10 to go to a world class school. That was my father's dream. He never wanted me to be like the people in our hometown. He wanted me to become something big.</p>
+      <p>At around 15, I told my father I wanted to be an actor and go to Mumbai. He literally brought the cash home, booked the flights, and said: let's go.</p>
+      <p>I came back, and started going to Chandigarh to give auditions. I started going on sets. First as a creative intern, then as a creative producer on a reality show. Over the next 2 years, I worked on films like Chamkila (Netflix) and Lafangey (MX Player). By 19 I had a good position in the industry.</p>
+      <p>The problem was, I didn't want to settle into comfort. I could become an AD like 99% of people, working on other people's visions forever, or be the 1% who have the courage to create something of their own. I chose the 1%.</p>
+      <p>So I started creating content and building a business where I help other creators. That's what I do.</p>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div class="kicker">Next step</div>
+    <h2>If you think this is you.</h2>
+    <p>DM me FILMS and I'll see if you are a fit for my programme.</p>
+    <div class="ctas">
+      <a class="btn" href="https://ig.me/m/shi.nemaa__">DM me FILMS</a>
+      <a class="btn ghost" href="https://media-cdn.cosmofeed.com/chat/The-Hook-Vault-SHINEMAA-Consults-2026-23-10-05-14-38.pdf">Get the free Hook Vault</a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 SHINEMAA Consults</footer>
+
+<script>
+  const els=document.querySelectorAll('section .wrap > *, .hero-grid > *');
+  els.forEach(e=>e.classList.add('rise'));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  els.forEach(e=>io.observe(e));
+  setTimeout(()=>els.forEach(e=>e.classList.add('in')),2500);
+</script>
+</body>
+</html>
