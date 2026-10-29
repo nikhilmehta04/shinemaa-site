@@ -203,6 +203,34 @@
   .poster img{width:100%;border-radius:16px;box-shadow:0 14px 40px rgba(18,183,106,.18)}
   .poster figcaption{color:var(--muted)}
 
+
+  /* case studies */
+  .casehead{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .num{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .dark .num{color:rgba(255,255,255,.5)}
+  .sub3{margin-top:48px;font-size:19px}
+  .pair{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px;align-items:start}
+  .pair figure.wide{grid-column:span 2}
+  .pair img,.pair video,.trio img,.ba2 img{width:100%;border-radius:14px;display:block;background:#000}
+  .pair video{aspect-ratio:9/16;object-fit:cover}
+  figure figcaption{font-size:13px;color:var(--muted);margin-top:8px;text-align:center}
+  .dark figure figcaption{color:rgba(255,255,255,.6)}
+  figcaption.after{color:var(--emerald)!important;font-weight:700}
+  .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px;max-width:860px}
+  .dms{display:flex;gap:14px;overflow-x:auto;padding-bottom:10px;margin-top:16px;scroll-snap-type:x mandatory}
+  .dms img{width:220px;flex:none;border-radius:14px;scroll-snap-align:start;border:1px solid rgba(92,240,168,.2)}
+  .ba2{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px;align-items:start}
+  .ba2.three{grid-template-columns:1fr 2fr 1.4fr}
+  .reels{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;margin-top:16px}
+  .reel{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:9/16;background:#000}
+  .reel img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+  .reel:hover img{transform:scale(1.05)}
+  .reel .vw{position:absolute;left:6px;bottom:6px;font-size:12px;font-weight:800;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.8)}
+  .steps-v{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+  .steps-v div{padding:20px;border-radius:16px;background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.02));border:1px solid var(--glass-line)}
+  .steps-v b{color:var(--mint);font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+  .steps-v p{font-size:15px;margin-top:8px}
+
   /* sticky phone CTA */
   .sticky{position:fixed;left:12px;right:12px;bottom:12px;border-radius:999px;background:rgba(3,18,12,.88);backdrop-filter:blur(14px);border:1px solid rgba(92,240,168,.25);padding:8px 8px 8px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;z-index:10;transform:translateY(140%);transition:transform .4s ease;box-shadow:0 10px 40px rgba(0,0,0,.35),0 0 30px rgba(18,183,106,.2)}
   .sticky.show{transform:none}
@@ -229,6 +257,11 @@
     .play{width:36px;height:36px;font-size:13px}
     .apply{padding:22px}
     .proofstrip{grid-template-columns:1fr}
+    .pair,.trio,.steps-v{grid-template-columns:1fr 1fr}
+    .pair figure.wide{grid-column:span 2}
+    .ba2,.ba2.three{grid-template-columns:1fr 1fr}
+    .reels{grid-template-columns:repeat(4,1fr)}
+    .dms img{width:180px}
     .poster,.testi .video{width:100%;max-width:340px}
     .ba{gap:10px}
     .final .halo{width:460px;height:460px}
@@ -251,7 +284,7 @@
         <p class="sub">I help creators go viral using my Storyselling Method without wasting time on posting reels that get 200 views.</p>
         <div class="ctas">
           <a class="btn" href="#book">Book a call</a>
-          <a class="btn ghost" href="#proof">See the results</a>
+          <a class="btn ghost" href="#cases">See the results</a>
         </div>
       </div>
       <div class="portrait"><img src="nikhil.jpg" alt="Nikhil, founder of SHINEMAA Consults"></div>
@@ -259,32 +292,99 @@
   </div>
 </header>
 
-<!-- 2 · BEST PROOF, right under the hero -->
-<section id="proof" class="light">
+<!-- 2 · CASE STUDIES, right under the hero -->
+<section id="cases" class="light case-sec">
   <div class="wrap">
-    <div class="kicker">Proof</div>
+    <div class="casehead"><span class="num">Case 01</span><div class="kicker">Sukhi · fitness coach, Australia</div></div>
     <h2>Same reel. Only the hook changed.</h2>
-    <p>Sukhi is a fitness coach based in Australia. He joined my programme just 1 day before his first viral reel.</p>
+    <p>Sukhi is a fitness coach based in Australia. He joined my programme just days before his first viral reel.</p>
     <p>On the second day of the programme, he posted a reel that got only 2,982 views. I saw it on my feed and sent him a voice note. He posted the same reel again. Same video, only the text changed, exactly as I told him. It went to 105K.</p>
     <div class="flow">
-      <figure><img class="shot" src="img/sukhi-before-2982.jpg" alt="Sukhi's reel before the hook change, 2,982 views"><figcaption>Before</figcaption></figure>
+      <figure><img class="shot" src="img/sukhi-before-2982.jpg" alt="Sukhi's reel before the hook change, 2,982 views"><figcaption>Bad hook · 2,982</figcaption></figure>
       <div class="arrow">→</div>
-      <figure><div class="slot note"><span class="play">▶</span>The voice note I sent him</div><figcaption>What I told him</figcaption></figure>
+      <figure><div class="slot shot note"><span class="play">▶</span>The voice note I sent him</div><figcaption>What I told him</figcaption></figure>
       <div class="arrow">→</div>
-      <figure><img class="shot" src="img/sukhi-after-105k.jpg" alt="The same reel with the new hook, 105K views"><figcaption class="after">After</figcaption></figure>
+      <figure><img class="shot" src="img/sukhi-after-105k.jpg" alt="The same reel with the new hook, 105K views"><figcaption class="after">Good hook · 105K</figcaption></figure>
     </div>
-    <h3 class="stats-title">Real numbers from my clients' reels. All organic.</h3>
-    <div class="stats">
-      <div class="stat"><b>10M</b><span>views in one month for an astrologer</span></div>
-      <div class="stat"><b>8.9M</b><span>views on one reel</span></div>
-      <div class="stat"><b>2.5M</b><span>views on one reel</span></div>
-      <div class="stat"><b>585K</b><span>views on one reel</span></div>
+    <div class="pair">
+      <figure><video controls playsinline preload="none" poster="media/sukhi-workshop.jpg" src="media/sukhi-workshop.mp4"></video><figcaption>Sukhi stopped me around 5 times in one workshop to say this.</figcaption></figure>
+      <figure><img src="img/sukhi-hook-story.jpg" alt="Story: this is how Sukhi's reel went viral just due to a text hook"><figcaption>The story I posted about it.</figcaption></figure>
+      <figure><img src="img/sukhi-call.jpg" alt="Nikhil and Sukhi on a call"><figcaption>One of our calls.</figcaption></figure>
     </div>
-    <div class="proofstrip">
-      <img src="img/insight-2-5m-reel.jpg" alt="Reel insights: 2.5M views">
-      <img src="img/insight-585k-reel.jpg" alt="Reel insights: 585K views">
-      <img src="img/astro-10m-month.jpg" alt="10M reels and post views in August">
+  </div>
+</section>
+
+<section class="dark case-sec">
+  <div class="wrap">
+    <div class="casehead"><span class="num">Case 02</span><div class="kicker">Vinay · eBay coach</div></div>
+    <h2>From 185 views to 20.8K, then the DMs started.</h2>
+    <p>Vinay teaches people how to sell on eBay. His reels were getting 140, 185, 196 views. Then one reel hit 20.8K views and brought him 175 new followers. 99.7% of the people who watched it had never seen him before.</p>
+    <p>Then the messages came. People asking about his fees, how to start, and how to join his class.</p>
+    <div class="trio">
+      <figure><img src="img/vinay/trial-reels.jpg" alt="Vinay's reels: 185, 2,664, 3,961, 20.8K views"><figcaption>His reels</figcaption></figure>
+      <figure><img src="img/vinay/insights-overview.jpg" alt="Reel insights: 20,901 views, 175 follows"><figcaption>20,901 views · 175 follows</figcaption></figure>
+      <figure><img src="img/vinay/insights-audience.jpg" alt="99.7% non-followers"><figcaption>99.7% new people</figcaption></figure>
     </div>
+    <h3 class="sub3">The DMs that came after</h3>
+    <div class="dms">
+      <img loading="lazy" src="img/vinay/dm-1.jpg" alt="DM asking about fees">
+      <img loading="lazy" src="img/vinay/dm-2.jpg" alt="DM promising to pay">
+      <img loading="lazy" src="img/vinay/dm-3.jpg" alt="DM asking how to start on eBay">
+      <img loading="lazy" src="img/vinay/dm-4.jpg" alt="DM asking for the fee structure">
+      <img loading="lazy" src="img/vinay/dm-5.jpg" alt="DM: I want to be part of your class">
+    </div>
+  </div>
+</section>
+
+<section class="light case-sec">
+  <div class="wrap">
+    <div class="casehead"><span class="num">Case 03</span><div class="kicker">Astrologer · my first client</div></div>
+    <h2>0 to 100K followers in 16 weeks.</h2>
+    <p>She was my first client. I did everything, from writing to shooting to editing to posting. I studied the most viral videos in her niche and learnt what works. I didn't copy. I just took the format.</p>
+    <p>Before, her reels got about 1,200 views. After, one reel alone crossed 8.9 million. She did 10 million views in a single month, and today she has over 124K followers.</p>
+    <div class="ba2">
+      <figure><img src="img/astro-before-profile.jpg" alt="Profile before: 0 followers"><figcaption>Before · 0 followers</figcaption></figure>
+      <figure><img src="img/astro-after-profile.jpg" alt="Profile after: 100K followers"><figcaption class="after">After · 100K followers</figcaption></figure>
+      <figure><img src="img/astro-before-reels.jpg" alt="Reels before: about 1,200 views"><figcaption>Reels before</figcaption></figure>
+      <figure><img src="img/astro-10m-month.jpg" alt="10M views in August"><figcaption class="after">10M views in one month</figcaption></figure>
+    </div>
+    <h3 class="sub3">Her reels after</h3>
+    <div class="reels "><figure class="reel"><img loading="lazy" src="img/astro/r00.jpg" alt="Reel with 8.9M views"><span class="vw">▶ 8.9M</span></figure><figure class="reel"><img loading="lazy" src="img/astro/r01.jpg" alt="Reel with 8.1M views"><span class="vw">▶ 8.1M</span></figure><figure class="reel"><img loading="lazy" src="img/astro/r02.jpg" alt="Reel with 5.3M views"><span class="vw">▶ 5.3M</span></figure><figure class="reel"><img loading="lazy" src="img/astro/r03.jpg" alt="Reel with 4M views"><span class="vw">▶ 4M</span></figure><figure class="reel"><img loading="lazy" src="img/astro/r04.jpg" alt="Reel with 2.5M views"><span class="vw">▶ 2.5M</span></figure><figure class="reel"><img loading="lazy" src="img/astro/r05.jpg" alt="Reel with 2.1M views"><span class="vw">▶ 2.1M</span></figure><figure class="reel"><img loading="lazy" src="img/astro/r06.jpg" alt="Reel with 1.9M views"><span class="vw">▶ 1.9M</span></figure><figure class="reel"><img loading="lazy" src="img/astro/r07.jpg" alt="Reel with 1.5M views"><span class="vw">▶ 1.5M</span></figure><figure class="reel"><img loading="lazy" src="img/astro/r08.jpg" alt="Reel with 1.1M views"><span class="vw">▶ 1.1M</span></figure><figure class="reel"><img loading="lazy" src="img/astro/r09.jpg" alt="Reel with 1.1M views"><span class="vw">▶ 1.1M</span></figure><figure class="reel"><img loading="lazy" src="img/astro/r10.jpg" alt="Reel with 1M views"><span class="vw">▶ 1M</span></figure><figure class="reel"><img loading="lazy" src="img/astro/r11.jpg" alt="Reel with 1M views"><span class="vw">▶ 1M</span></figure><figure class="reel"><img loading="lazy" src="img/astro/r12.jpg" alt="Reel with 772K views"><span class="vw">▶ 772K</span></figure><figure class="reel"><img loading="lazy" src="img/astro/r13.jpg" alt="Reel with 734K views"><span class="vw">▶ 734K</span></figure><figure class="reel"><img loading="lazy" src="img/astro/r14.jpg" alt="Reel with 705K views"><span class="vw">▶ 705K</span></figure><figure class="reel"><img loading="lazy" src="img/astro/r15.jpg" alt="Reel with 673K views"><span class="vw">▶ 673K</span></figure></div>
+  </div>
+</section>
+
+<section class="dark case-sec">
+  <div class="wrap">
+    <div class="casehead"><span class="num">Case 04</span><div class="kicker">Robin Singh · US visa coach</div></div>
+    <h2>5 clients in his first month.</h2>
+    <p>He was already putting out content, but he wasn't clear what every piece of content was really doing.</p>
+    <div class="steps-v">
+      <div><b>Step 1</b><p>Tell his story and why he does what he does, so people connect with him and like him.</p></div>
+      <div><b>Step 2</b><p>Every month, at least 3 to 4 top of funnel reels engineered to go viral.</p></div>
+      <div><b>Step 3</b><p>Value in his stories again and again, so people trust him before they ever message.</p></div>
+      <div><b>Result</b><p>Reels in the hundreds of thousands, and 5 clients closed in the first month.</p></div>
+    </div>
+    <div class="pair">
+      <figure><img src="img/immig-reel-insights.jpg" alt="Reel insights: 5,151 profile visits, 2,322 follows"><figcaption>One reel · 5,151 profile visits · 2,322 follows</figcaption></figure>
+      <figure class="wide"><img src="img/immig-5-clients.jpg" alt="We closed 5 clients this month with this offer"><figcaption>His message after the first month</figcaption></figure>
+    </div>
+    <h3 class="sub3">His reels</h3>
+    <div class="reels "><figure class="reel"><img loading="lazy" src="img/robin/r00.jpg" alt="Reel with 260K views"><span class="vw">▶ 260K</span></figure><figure class="reel"><img loading="lazy" src="img/robin/r01.jpg" alt="Reel with 173K views"><span class="vw">▶ 173K</span></figure><figure class="reel"><img loading="lazy" src="img/robin/r02.jpg" alt="Reel with 115K views"><span class="vw">▶ 115K</span></figure><figure class="reel"><img loading="lazy" src="img/robin/r03.jpg" alt="Reel with 105K views"><span class="vw">▶ 105K</span></figure><figure class="reel"><img loading="lazy" src="img/robin/r04.jpg" alt="Reel with 100K views"><span class="vw">▶ 100K</span></figure><figure class="reel"><img loading="lazy" src="img/robin/r05.jpg" alt="Reel with 74K views"><span class="vw">▶ 74K</span></figure><figure class="reel"><img loading="lazy" src="img/robin/r06.jpg" alt="Reel with 52K views"><span class="vw">▶ 52K</span></figure><figure class="reel"><img loading="lazy" src="img/robin/r07.jpg" alt="Reel with 49K views"><span class="vw">▶ 49K</span></figure></div>
+  </div>
+</section>
+
+<section class="light case-sec">
+  <div class="wrap">
+    <div class="casehead"><span class="num">Case 05</span><div class="kicker">Rajesh Kumar · study abroad consultant</div></div>
+    <h2>From 372 views to 72.9K.</h2>
+    <p>Rajesh helps Indian students get UK study visas. Before, his reels got a few hundred views. After, his reels crossed 72.9K, 37.5K and 34.5K, and he closed 3 deals in his second month.</p>
+    <div class="ba2 three">
+      <figure><img src="img/rajesh-before-reel.jpg" alt="Reel before: 372 views"><figcaption>Before · 372 views</figcaption></figure>
+      <figure><img src="img/rajesh-after-reels.jpg" alt="Reels after: 35.3K, 27K, 23.2K views"><figcaption class="after">After</figcaption></figure>
+      <figure><img src="img/rajesh-after-profile.jpg" alt="Profile after"><figcaption>His profile now</figcaption></figure>
+    </div>
+    <h3 class="sub3">His reels now</h3>
+    <div class="reels "><figure class="reel"><img loading="lazy" src="img/rajesh/r00.jpg" alt="Reel with 73K views"><span class="vw">▶ 73K</span></figure><figure class="reel"><img loading="lazy" src="img/rajesh/r01.jpg" alt="Reel with 38K views"><span class="vw">▶ 38K</span></figure><figure class="reel"><img loading="lazy" src="img/rajesh/r02.jpg" alt="Reel with 34K views"><span class="vw">▶ 34K</span></figure><figure class="reel"><img loading="lazy" src="img/rajesh/r03.jpg" alt="Reel with 9K views"><span class="vw">▶ 9K</span></figure><figure class="reel"><img loading="lazy" src="img/rajesh/r04.jpg" alt="Reel with 5K views"><span class="vw">▶ 5K</span></figure><figure class="reel"><img loading="lazy" src="img/rajesh/r05.jpg" alt="Reel with 4K views"><span class="vw">▶ 4K</span></figure></div>
   </div>
 </section>
 
@@ -401,40 +501,6 @@
   </div>
 </section>
 
-<!-- 7 · MORE CASE STUDIES -->
-<section class="dark">
-  <div class="wrap">
-    <div class="kicker">Case studies</div>
-    <h2>More results.</h2>
-    <div class="cases">
-      <div class="case">
-        <div class="kicker">Astrologer · my first client</div>
-        <div class="big">0 → 100K</div>
-        <p>How I helped my first client ever grow her personal brand from 0 to 100K within 16 weeks.</p>
-        <p>I did everything, from writing to shooting to editing to posting. I did thorough competitor research. I didn't copy. I just took the format and learnt what works.</p><p>Before: about 1,200 views a reel. After: 8.9M and 5.2M on single reels, and 10M views in one month.</p>
-        <div class="shots2"><figure><img src="img/astro-before-profile.jpg" alt="Profile before: 0 followers"><figcaption>Before</figcaption></figure><figure><img src="img/astro-after-profile.jpg" alt="Profile after: 100K followers"><figcaption>After</figcaption></figure></div>
-        <div class="shots2"><figure><img src="img/astro-before-reels.jpg" alt="Reels before: about 1,200 views each"><figcaption>Reels before</figcaption></figure><figure><img src="img/astro-after-reels.jpg" alt="Reels after: 8.9M and 5.2M views"><figcaption>Reels after</figcaption></figure></div>
-      </div>
-      <div class="case">
-        <div class="kicker">Immigration consultant</div>
-        <div class="big">100+ DMs a month</div>
-        <p>He was already putting out content, but he wasn't clear what every piece of content was really doing.</p>
-        <p>My first goal was to tell his story and why he's doing what he's doing, so people connect with him and like him. Every month, we were putting out at least 3 to 4 top of funnel content pieces that were engineered to go viral.</p>
-        <figure class="msg"><img src="img/immig-5-clients.jpg" alt="Message: we closed 5 clients this month with this offer"><figcaption>His message after the first month</figcaption></figure>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 8 · TESTIMONIAL VIDEO -->
-<section class="light">
-  <div class="wrap">
-    <div class="kicker">In his words</div>
-    <h2>Sukhi.</h2>
-    <div class="testi"><figure class="poster"><img src="img/sukhi-call.jpg" alt="Nikhil and Sukhi on a programme call"><figcaption>One of our calls</figcaption></figure><div class="slot video">Sukhi's testimonial video<br>(due Fri 30 Oct)</div></div>
-  </div>
-</section>
-
 <!-- 9 · ABOUT -->
 <section class="light">
   <div class="wrap story">
@@ -460,6 +526,25 @@
     <details><summary>Will you do everything for me?</summary><p>No. I guide you, but you make the content. It's consulting.</p></details>
     <details><summary>I am just starting out. Can I still join?</summary><p>Yes, if you have already got a real result with your skill, even in your own life.</p></details>
     <details><summary>How much does it cost?</summary><p>We talk about it on the call.</p></details>
+  </div>
+</section>
+
+<!-- MORE PROOF, at the end -->
+<section class="light">
+  <div class="wrap">
+    <div class="kicker">More proof</div>
+    <h2>Real numbers. All organic.</h2>
+    <div class="stats">
+      <div class="stat"><b>8.9M</b><span>views on one reel</span></div>
+      <div class="stat"><b>10M</b><span>views in one month</span></div>
+      <div class="stat"><b>2.5M</b><span>views on one reel</span></div>
+      <div class="stat"><b>585K</b><span>views on one reel</span></div>
+    </div>
+    <div class="proofstrip">
+      <img loading="lazy" src="img/insight-2-5m-reel.jpg" alt="Reel insights: 2.5M views">
+      <img loading="lazy" src="img/insight-585k-reel.jpg" alt="Reel insights: 585K views">
+      <img loading="lazy" src="img/insight-2-5m-overview.jpg" alt="2,579,383 views overview">
+    </div>
   </div>
 </section>
 
