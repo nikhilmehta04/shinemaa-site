@@ -170,6 +170,7 @@
   .vcom{width:240px}
   .flow .shot{aspect-ratio:9/16}
   .flow .note{aspect-ratio:9/16;flex-direction:column;gap:12px}
+  .flow video.vchat{width:100%;aspect-ratio:9/16;object-fit:cover;object-position:top;border-radius:16px;display:block;background:#0b141a;box-shadow:0 14px 40px rgba(10,60,40,.18)}
   .vnote{cursor:pointer;width:100%;font:inherit;color:var(--ink,#0b2a1c);font-weight:600}
   .vnote small{display:block;font-size:11.5px;font-weight:600;color:var(--emerald);margin-top:4px}
   .vbars{display:flex;gap:3px;align-items:center;height:22px}
@@ -336,7 +337,7 @@
     <div class="flow">
       <figure><img class="shot" src="img/sukhi-before-2982.jpg" alt="Sukhi's reel before the hook change, 2,982 views"><figcaption>Bad hook · 2,982</figcaption></figure>
       <div class="arrow">→</div>
-      <figure><button type="button" class="slot shot note vnote" aria-label="Play the voice note I sent him"><span class="play">▶</span><span class="vbars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>The voice note I sent him<small>0:20 · tap to play</small></button><audio class="vnaudio" src="media/sukhi-voice-note.m4a" preload="none"></audio><figcaption>What I told him</figcaption></figure>
+      <figure><video class="shot vchat" src="media/sukhi-voice-chat.mp4" poster="media/sukhi-voice-chat-poster.jpg" controls playsinline preload="metadata"></video><figcaption>My voice note to him</figcaption></figure>
       <div class="arrow">→</div>
       <figure><img class="shot" src="img/sukhi-after-117k.jpg" alt="The same reel with the new hook, 117K views"><figcaption class="after">Good hook · 117K · day 2</figcaption></figure>
     </div>
