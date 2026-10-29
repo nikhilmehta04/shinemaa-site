@@ -157,6 +157,11 @@
 
   /* proof flow */
   .flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:16px;align-items:center;margin-top:36px;max-width:720px}
+  .flow.vin{grid-template-columns:2.1fr auto .62fr auto .62fr;max-width:980px}
+  .flow.vin img.wide{aspect-ratio:auto}
+  .vsum{max-width:520px;margin-top:28px}
+  .vsum img,.vcom video{width:100%;border-radius:16px;display:block;box-shadow:0 14px 40px rgba(10,60,40,.18)}
+  .vcom{max-width:300px;margin-top:16px}
   .flow .shot{aspect-ratio:9/16}
   .flow .note{aspect-ratio:9/16;flex-direction:column;gap:12px}
   .play{width:52px;height:52px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;background:linear-gradient(135deg,#1FD483,#0E9F5C);box-shadow:0 0 24px rgba(18,183,106,.5);font-size:18px}
@@ -320,20 +325,18 @@
 <section class="dark case-sec">
   <div class="wrap">
     <div class="casehead"><span class="num">Case 02</span><div class="kicker">Vinay · eBay coach</div></div>
-    <h2>One reel hit 20.8K. Then the DMs started.</h2>
-    <p>Vinay teaches people how to sell on eBay. Most of his reels were getting a few hundred to a few thousand views. Then one reel hit 20.8K views and brought him 175 new followers.</p>
-    <p>Then the messages came. People asking about his fees, how to start, and how to join his class.</p>
-    <div class="trio two">
-      <figure><img src="img/vinay/trial-reels.jpg" alt="Vinay's reels: 185, 2,664, 3,961, 20.8K views"><figcaption>His reels</figcaption></figure>
-      <figure><img src="img/vinay/insights-overview.jpg" alt="Reel insights: 20,901 views, 175 follows"><figcaption>20,901 views · 175 follows</figcaption></figure>
+    <h2>One reel hit 24K. Then the comments poured in.</h2>
+    <p>Vinay teaches people how to sell on eBay. Most of his reels were getting a few hundred to a few thousand views. Then one reel hit 24K views and brought him 175 new followers.</p>
+    <div class="flow vin">
+      <figure><img class="shot wide" src="img/vinay/before-3-reels.jpg" alt="His three reels before going viral: 2,940, 1,619 and 1,216 views"><figcaption>Before · 1,216 to 2,940 views</figcaption></figure>
+      <div class="arrow">→</div>
+      <figure><div class="slot shot note"><span class="play">▶</span>"Ready for your first viral reel?"</div><figcaption>What I told him</figcaption></figure>
+      <div class="arrow">→</div>
+      <figure><img class="shot" src="img/vinay/after-24k.jpg" alt="His viral reel, 24K views"><figcaption class="after">Viral reel · 24K</figcaption></figure>
     </div>
-    <h3 class="sub3">The DMs that came after</h3>
-    <div class="dms">
-      <img loading="lazy" src="img/vinay/dm-1.jpg" alt="DM asking about fees">
-      <img loading="lazy" src="img/vinay/dm-3.jpg" alt="DM asking how to start on eBay">
-      <img loading="lazy" src="img/vinay/dm-4.jpg" alt="DM asking for the fee structure">
-      <img loading="lazy" src="img/vinay/dm-5.jpg" alt="DM: I want to be part of your class">
-    </div>
+    <figure class="vsum"><img src="img/vinay/insights-summary.jpg" alt="Reel insights: 20,901 views, 16,984 viewers, 22s average watch time, 175 follows"></figure>
+    <h3 class="sub3">The comments that came in</h3>
+    <figure class="vcom"><video src="img/vinay/comments.mp4" poster="img/vinay/comments-poster.jpg" autoplay muted loop playsinline preload="metadata"></video></figure>
   </div>
 </section>
 
