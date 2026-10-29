@@ -189,6 +189,20 @@
   .calendar{margin-top:32px;max-width:720px}
   .calendar .slot{height:420px}
 
+
+  .flow img.shot{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:16px;box-shadow:0 14px 40px rgba(10,60,40,.18)}
+  .proofstrip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+  .proofstrip img{width:100%;border-radius:14px;box-shadow:0 10px 30px rgba(10,60,40,.12)}
+  .shots2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+  .shots2 img,.msg img{width:100%;border-radius:12px;border:1px solid rgba(92,240,168,.18)}
+  .shots2 figcaption,.msg figcaption,.poster figcaption{font-size:12px;color:rgba(255,255,255,.55);margin-top:6px;text-align:center}
+  .msg{margin-top:18px}
+  .testi{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start;margin-top:30px}
+  .testi .video{margin-top:0;width:300px}
+  .poster{width:300px}
+  .poster img{width:100%;border-radius:16px;box-shadow:0 14px 40px rgba(18,183,106,.18)}
+  .poster figcaption{color:var(--muted)}
+
   /* sticky phone CTA */
   .sticky{position:fixed;left:12px;right:12px;bottom:12px;border-radius:999px;background:rgba(3,18,12,.88);backdrop-filter:blur(14px);border:1px solid rgba(92,240,168,.25);padding:8px 8px 8px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;z-index:10;transform:translateY(140%);transition:transform .4s ease;box-shadow:0 10px 40px rgba(0,0,0,.35),0 0 30px rgba(18,183,106,.2)}
   .sticky.show{transform:none}
@@ -214,6 +228,8 @@
     .flow figcaption{font-size:12px}
     .play{width:36px;height:36px;font-size:13px}
     .apply{padding:22px}
+    .proofstrip{grid-template-columns:1fr}
+    .poster,.testi .video{width:100%;max-width:340px}
     .ba{gap:10px}
     .final .halo{width:460px;height:460px}
   }
@@ -249,13 +265,13 @@
     <div class="kicker">Proof</div>
     <h2>Same reel. Only the hook changed.</h2>
     <p>Sukhi is a fitness coach based in Australia. He joined my programme just 1 day before his first viral reel.</p>
-    <p>On the second day of the programme, he posted a reel that got only 2,700 views. I saw it on my feed and sent him a voice note. He posted the same reel again. Same video, only the text changed, exactly as I told him. It went to 111K.</p>
+    <p>On the second day of the programme, he posted a reel that got only 2,982 views. I saw it on my feed and sent him a voice note. He posted the same reel again. Same video, only the text changed, exactly as I told him. It went to 105K.</p>
     <div class="flow">
-      <figure><div class="slot shot">Screenshot<br>2,700 views</div><figcaption>Before</figcaption></figure>
+      <figure><img class="shot" src="img/sukhi-before-2982.jpg" alt="Sukhi's reel before the hook change, 2,982 views"><figcaption>Before</figcaption></figure>
       <div class="arrow">→</div>
       <figure><div class="slot note"><span class="play">▶</span>The voice note I sent him</div><figcaption>What I told him</figcaption></figure>
       <div class="arrow">→</div>
-      <figure><div class="slot shot">Screenshot<br>111K views</div><figcaption class="after">After</figcaption></figure>
+      <figure><img class="shot" src="img/sukhi-after-105k.jpg" alt="The same reel with the new hook, 105K views"><figcaption class="after">After</figcaption></figure>
     </div>
     <h3 class="stats-title">Real numbers from my clients' reels. All organic.</h3>
     <div class="stats">
@@ -263,6 +279,11 @@
       <div class="stat"><b>8.9M</b><span>views on one reel</span></div>
       <div class="stat"><b>2.5M</b><span>views on one reel</span></div>
       <div class="stat"><b>585K</b><span>views on one reel</span></div>
+    </div>
+    <div class="proofstrip">
+      <img src="img/insight-2-5m-reel.jpg" alt="Reel insights: 2.5M views">
+      <img src="img/insight-585k-reel.jpg" alt="Reel insights: 585K views">
+      <img src="img/astro-10m-month.jpg" alt="10M reels and post views in August">
     </div>
   </div>
 </section>
@@ -391,14 +412,15 @@
         <div class="big">0 → 100K</div>
         <p>How I helped my first client ever grow her personal brand from 0 to 100K within 16 weeks.</p>
         <p>I did everything, from writing to shooting to editing to posting. I did thorough competitor research. I didn't copy. I just took the format and learnt what works.</p><p>Before: about 1,200 views a reel. After: 8.9M and 5.2M on single reels, and 10M views in one month.</p>
-        <div class="slot">Follower growth screenshot, name blurred</div>
+        <div class="shots2"><figure><img src="img/astro-before-profile.jpg" alt="Profile before: 0 followers"><figcaption>Before</figcaption></figure><figure><img src="img/astro-after-profile.jpg" alt="Profile after: 100K followers"><figcaption>After</figcaption></figure></div>
+        <div class="shots2"><figure><img src="img/astro-before-reels.jpg" alt="Reels before: about 1,200 views each"><figcaption>Reels before</figcaption></figure><figure><img src="img/astro-after-reels.jpg" alt="Reels after: 8.9M and 5.2M views"><figcaption>Reels after</figcaption></figure></div>
       </div>
       <div class="case">
         <div class="kicker">Immigration consultant</div>
         <div class="big">100+ DMs a month</div>
         <p>He was already putting out content, but he wasn't clear what every piece of content was really doing.</p>
         <p>My first goal was to tell his story and why he's doing what he's doing, so people connect with him and like him. Every month, we were putting out at least 3 to 4 top of funnel content pieces that were engineered to go viral.</p>
-        <div class="slot">DM screenshots, names blurred</div>
+        <figure class="msg"><img src="img/immig-5-clients.jpg" alt="Message: we closed 5 clients this month with this offer"><figcaption>His message after the first month</figcaption></figure>
       </div>
     </div>
   </div>
@@ -409,7 +431,7 @@
   <div class="wrap">
     <div class="kicker">In his words</div>
     <h2>Sukhi.</h2>
-    <div class="slot video">Sukhi's testimonial video<br>(due Fri 30 Oct)</div>
+    <div class="testi"><figure class="poster"><img src="img/sukhi-call.jpg" alt="Nikhil and Sukhi on a programme call"><figcaption>One of our calls</figcaption></figure><div class="slot video">Sukhi's testimonial video<br>(due Fri 30 Oct)</div></div>
   </div>
 </section>
 
@@ -433,7 +455,7 @@
 <section class="light">
   <div class="wrap narrow">
     <div class="kicker">Questions</div>
-    <h2>Before you DM.</h2>
+    <h2>Before you book.</h2>
     <details><summary>How much time do I need each day?</summary><p>6 hours a week.</p></details>
     <details><summary>Will you do everything for me?</summary><p>No. I guide you, but you make the content. It's consulting.</p></details>
     <details><summary>I am just starting out. Can I still join?</summary><p>Yes, if you have already got a real result with your skill, even in your own life.</p></details>
