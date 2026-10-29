@@ -154,6 +154,41 @@
   @keyframes breathe{0%,100%{opacity:.7;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.08)}}
   footer{padding:30px 0;font-size:13px;color:rgba(255,255,255,.5);text-align:center;background:var(--deep)}
 
+
+  /* proof flow */
+  .flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:16px;align-items:center;margin-top:36px;max-width:720px}
+  .flow .shot{aspect-ratio:9/16}
+  .flow .note{aspect-ratio:9/16;flex-direction:column;gap:12px}
+  .play{width:52px;height:52px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;background:linear-gradient(135deg,#1FD483,#0E9F5C);box-shadow:0 0 24px rgba(18,183,106,.5);font-size:18px}
+  .flow .arrow{font-size:28px;color:var(--emerald);font-weight:800;text-shadow:0 0 14px rgba(18,183,106,.5)}
+  .flow figcaption{text-align:center;font-weight:700;margin-top:12px;font-size:15px}
+  .flow figcaption.after{color:var(--emerald)}
+  .stats-title{margin-top:56px;font-size:20px}
+  .stats-title + .stats{margin-top:18px}
+  .steps.six{grid-template-columns:repeat(3,1fr)}
+  /* lists */
+  .ticks,.crosses{list-style:none;display:grid;gap:12px}
+  .ticks li,.crosses li{display:flex;gap:12px;align-items:baseline}
+  .ticks li::before{content:"✓";flex:none;width:20px;height:20px;border-radius:50%;background:var(--emerald);color:#fff;font-size:12px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 0 12px rgba(18,183,106,.45);transform:translateY(3px)}
+  .crosses li::before{content:"✕";flex:none;width:20px;height:20px;border-radius:50%;border:1.5px solid var(--muted);color:var(--muted);font-size:11px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;transform:translateY(3px)}
+  /* deliverables */
+  .deliver{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:32px}
+  .deliver .item{padding:22px 24px 22px 58px;background:var(--white);border:1px solid var(--line);border-radius:16px;position:relative;box-shadow:0 8px 24px rgba(10,60,40,.05);transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+  .deliver .item:hover{transform:translateY(-3px);border-color:rgba(18,183,106,.4);box-shadow:0 14px 36px rgba(18,183,106,.14)}
+  .deliver .item::before{content:"✓";position:absolute;left:22px;top:24px;width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,#1FD483,#0E9F5C);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 0 14px rgba(18,183,106,.5)}
+  .deliver h3{font-size:17px;margin-bottom:4px}
+  .deliver p{font-size:14.5px;color:var(--muted)}
+  /* booking form */
+  .apply{margin-top:32px;max-width:720px;display:grid;gap:16px;padding:32px;border-radius:24px;background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.02));border:1px solid var(--glass-line);backdrop-filter:blur(10px);box-shadow:0 0 60px rgba(18,183,106,.15)}
+  .apply .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .apply label{display:grid;gap:8px;font-size:14px;font-weight:600;color:rgba(255,255,255,.85)}
+  .apply input,.apply textarea,.apply select{font:inherit;font-weight:500;color:#fff;background:rgba(0,0,0,.35);border:1px solid rgba(92,240,168,.22);border-radius:12px;padding:13px 14px;outline:none;transition:border-color .25s ease,box-shadow .25s ease}
+  .apply select option{color:#0A1F16}
+  .apply input:focus,.apply textarea:focus,.apply select:focus{border-color:var(--mint);box-shadow:0 0 0 4px rgba(92,240,168,.15)}
+  .apply .btn{justify-self:start;border:0;cursor:pointer;font:inherit;font-weight:800}
+  .calendar{margin-top:32px;max-width:720px}
+  .calendar .slot{height:420px}
+
   /* sticky phone CTA */
   .sticky{position:fixed;left:12px;right:12px;bottom:12px;border-radius:999px;background:rgba(3,18,12,.88);backdrop-filter:blur(14px);border:1px solid rgba(92,240,168,.25);padding:8px 8px 8px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;z-index:10;transform:translateY(140%);transition:transform .4s ease;box-shadow:0 10px 40px rgba(0,0,0,.35),0 0 30px rgba(18,183,106,.2)}
   .sticky.show{transform:none}
@@ -173,7 +208,12 @@
     .portrait{max-width:340px}
     .story .portrait{position:relative;top:0}
     .stats{grid-template-columns:1fr 1fr}
-    .steps,.steps.four,.join{grid-template-columns:1fr}
+    .steps,.steps.four,.steps.six,.join,.deliver,.apply .row{grid-template-columns:1fr}
+    .flow{grid-template-columns:1fr auto 1fr auto 1fr;gap:6px}
+    .flow .arrow{font-size:18px}
+    .flow figcaption{font-size:12px}
+    .play{width:36px;height:36px;font-size:13px}
+    .apply{padding:22px}
     .ba{gap:10px}
     .final .halo{width:460px;height:460px}
   }
@@ -194,7 +234,7 @@
         <h1><span class="glowtext">100+ DMs</span> <span class="shine">a month from people asking for help in 90 days</span></h1>
         <p class="sub">I help creators go viral using my Storyselling Method without wasting time on posting reels that get 200 views.</p>
         <div class="ctas">
-          <a class="btn" href="https://ig.me/m/shi.nemaa__">DM me FILMS</a>
+          <a class="btn" href="#book">Book a call</a>
           <a class="btn ghost" href="#proof">See the results</a>
         </div>
       </div>
@@ -208,18 +248,21 @@
   <div class="wrap">
     <div class="kicker">Proof</div>
     <h2>Same reel. Only the hook changed.</h2>
-    <p>Sukhi is a fitness coach based in Australia, and he joined my programme just 1 day before his first viral reel.</p>
-    <p>On the second day of his programme, Sukhi posted a reel which only got 2,700 views. I saw the reel on my feed and sent him a voice note. He posted the same reel again. It was the same reel, just the text was changed as I told him, and it went to 111K.</p>
-    <div class="ba">
-      <figure><div class="slot">Screenshot<br>2,700 views</div><figcaption>2,700</figcaption></figure>
+    <p>Sukhi is a fitness coach based in Australia. He joined my programme just 1 day before his first viral reel.</p>
+    <p>On the second day of the programme, he posted a reel that got only 2,700 views. I saw it on my feed and sent him a voice note. He posted the same reel again. Same video, only the text changed, exactly as I told him. It went to 111K.</p>
+    <div class="flow">
+      <figure><div class="slot shot">Screenshot<br>2,700 views</div><figcaption>Before</figcaption></figure>
       <div class="arrow">→</div>
-      <figure><div class="slot">Screenshot<br>111K views</div><figcaption class="after">111K</figcaption></figure>
+      <figure><div class="slot note"><span class="play">▶</span>The voice note I sent him</div><figcaption>What I told him</figcaption></figure>
+      <div class="arrow">→</div>
+      <figure><div class="slot shot">Screenshot<br>111K views</div><figcaption class="after">After</figcaption></figure>
     </div>
+    <h3 class="stats-title">Real numbers from my clients' reels. All organic.</h3>
     <div class="stats">
-      <div class="stat"><b>9M</b><span>views on my own video</span></div>
-      <div class="stat"><b>8.9M</b><span>views</span></div>
-      <div class="stat"><b>8.7M</b><span>views</span></div>
-      <div class="stat"><b>5M</b><span>views</span></div>
+      <div class="stat"><b>10M</b><span>views in one month for an astrologer</span></div>
+      <div class="stat"><b>8.9M</b><span>views on one reel</span></div>
+      <div class="stat"><b>2.5M</b><span>views on one reel</span></div>
+      <div class="stat"><b>585K</b><span>views on one reel</span></div>
     </div>
   </div>
 </section>
@@ -229,12 +272,14 @@
   <div class="wrap">
     <div class="kicker">The method</div>
     <h2>The Storyselling Method.</h2>
-    <p>I believe storytelling is the main thing. What I teach is storytelling, not how you can get views. Selling through storytelling is storyselling.</p>
-    <div class="steps four">
-      <div class="step"><div class="n">01 · HOOKOLOGY</div><h3>Hooks and stories</h3><p>I literally teach hooks. I literally teach how to tell stories, because those are the things that make you viral.</p></div>
-      <div class="step"><div class="n">02 · PILLARS</div><h3>My content pillars</h3><p>I have my own pillars of content that you need to make: admirable, likeable, credible, trustable. So people want to buy.</p></div>
-      <div class="step"><div class="n">03 · FILM</div><h3>Shoot like a filmmaker</h3><p>I'm a filmmaker, so I teach you how to shoot that way, and how to really tell your own stories in a way that engages people.</p></div>
-      <div class="step"><div class="n">04 · 7 DAYS</div><h3>The 7-day viral method</h3><p>You use my systems and my processes to post continuously for 7 days.</p></div>
+    <p>Most people teach you how to chase views. I teach you how to tell stories, because stories are what make people stop, watch and buy. Selling through storytelling is storyselling.</p>
+    <div class="steps six">
+      <div class="step"><div class="n">01 · MINDSET</div><h3>Think like a creator</h3><p>We start with your 90-day roadmap and rewire how you think about content, so you stop overthinking and start posting.</p></div>
+      <div class="step"><div class="n">02 · HOOKOLOGY</div><h3>Script reels that are unreasonable not to go viral</h3><p>The philosophy of hooks, the SLA Method and the Big Idea Extractor. Then we pick your best 7 scripts together.</p></div>
+      <div class="step"><div class="n">03 · BRAND</div><h3>A personal brand people can't stop buying from</h3><p>Know exactly who you speak to, what you stand for and how your brand looks.</p></div>
+      <div class="step"><div class="n">04 · FILM</div><h3>Content that looks like the price you ask</h3><p>Filming sessions and visual design, so every reel looks premium from the first frame.</p></div>
+      <div class="step"><div class="n">05 · 7 DAYS</div><h3>The 7-Day Viral Method</h3><p>Post every day for 7 days using my systems and processes, and get your first viral reel within your first 15 days.</p></div>
+      <div class="step"><div class="n">06 · LEADS</div><h3>Turn views into DMs</h3><p>Content and calls to action that turn viral views into people asking for your help.</p></div>
     </div>
   </div>
 </section>
@@ -247,11 +292,21 @@
     <div class="fit">
       <div class="col">
         <h3><span class="dot"></span>This is for you if</h3>
-        <p>You know the importance of content. You have made two or three reels here and there, but you lack direction. You are in the darkness.</p><p>You know you are good at your skill. You have already got results with it. But you think everybody else's content can go viral, and yours won't.</p>
+        <ul class="ticks">
+          <li>You know content is important.</li>
+          <li>You have made two or three reels here and there, but you have no direction.</li>
+          <li>You feel like you are in the dark.</li>
+          <li>You are good at your skill and have already got real results with it.</li>
+          <li>You believe everyone else's content can go viral, but yours won't.</li>
+        </ul>
       </div>
       <div class="col no">
         <h3><span class="dot"></span>This is not for you if</h3>
-        <p>You can't post 5 reels a week for 90 days.</p><p>You haven't got a real result with your skill yet, not even in your own life.</p>
+        <ul class="crosses">
+          <li>You can't post 5 reels a week for 90 days.</li>
+          <li>You don't have a skill you have got real results with.</li>
+          <li>You think you already know everything.</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -259,17 +314,25 @@
 
 <!-- 5 · THE PROGRAMME: the name enters here, after the hero has earned it -->
 <section class="light">
-  <div class="wrap narrow">
+  <div class="wrap">
     <div class="kicker">The programme</div>
     <h2>Act One.</h2>
-    <p>My 90-day programme. I help you with all of it through my systems and my accountability.</p>
-    <ul class="list">
-      <li>One-on-one calls with me every two weeks.</li>
-      <li>The exact processes on how to make your reels viral.</li>
-      <li>Workshops on branding, how to shoot, how to write hooks, everything.</li>
-      <li>Access to the community.</li>
-      <li>You are held accountable for every post.</li>
-    </ul>
+    <p>My 90-day programme. Everything you need to go viral and fill your inbox, with me by your side the whole way.</p>
+    <div class="deliver">
+      <div class="item"><h3>Onboarding Strategy Call</h3><p>We map your personal 90-day growth roadmap together.</p></div>
+      <div class="item"><h3>Content Brain Rewire Session</h3><p>A one-on-one session with me to break the "my content won't go viral" belief for good.</p></div>
+      <div class="item"><h3>1:1 Strategy Calls Every Two Weeks</h3><p>Direct time with me to review, fix and plan your next moves.</p></div>
+      <div class="item"><h3>Content Audit Sessions</h3><p>I go through your reels and tell you exactly what to change.</p></div>
+      <div class="item"><h3>Dream Follower Strategy</h3><p>Worksheet and video module, so you know exactly who your content speaks to.</p></div>
+      <div class="item"><h3>Foundation of Your Brand Workshop</h3><p>The last brand workshop you will ever need. You leave knowing exactly how your brand will look.</p></div>
+      <div class="item"><h3>Hookology</h3><p>The Philosophy of Hooks, the SLA Method, the Big Idea Extractor and your Brainstorming Partner.</p></div>
+      <div class="item"><h3>Script Review Call</h3><p>We pick your best 7 scripts. Those become your first 7 videos.</p></div>
+      <div class="item"><h3>Filming Sessions and Visual Design Workshop</h3><p>Shoot like a filmmaker, so your content looks as premium as your offer.</p></div>
+      <div class="item"><h3>The 7-Day Viral Method</h3><p>My step-by-step system for your first viral reel.</p></div>
+      <div class="item"><h3>Lead Content Strategy and CTA Vault</h3><p>The content and 16 high-converting calls to action that turn views into DMs.</p></div>
+      <div class="item"><h3>Private Creator Community</h3><p>A room full of creators doing the same work, pushing each other every week.</p></div>
+      <div class="item"><h3>Accountability on Every Post</h3><p>You never post alone. Every reel is tracked and every week is checked.</p></div>
+    </div>
   </div>
 </section>
 
@@ -279,12 +342,41 @@
     <div class="kicker">How to join</div>
     <h2>Four steps.</h2>
     <div class="join">
-      <div><h3>DM me FILMS</h3><p>On Instagram, @shi.nemaa__</p></div>
-      <div><h3>I see if you are a fit</h3><p>A few questions in DM.</p></div>
-      <div><h3>Book a call</h3><p>Pick a time that works for you.</p></div>
+      <div><h3>Fill the form</h3><p>A few questions about you and your skill.</p></div>
+      <div><h3>Pick a time</h3><p>Choose a slot that works for you.</p></div>
+      <div><h3>We talk</h3><p>On the call we see if you are a fit.</p></div>
       <div><h3>Join</h3><p>Pay the token amount and we start.</p></div>
     </div>
-    <div class="todo"><b>Nikhil to give</b>Your booking link, once it is ready. Until then every button opens your Instagram DMs.</div>
+  </div>
+</section>
+
+<!-- 6b · BOOK A CALL, on the page -->
+<section id="book" class="dark">
+  <div class="wrap">
+    <div class="kicker">Book a call</div>
+    <h2>Book your call with me.</h2>
+    <p>Answer a few questions, then pick a time that works for you.</p>
+    <form class="apply" id="apply" autocomplete="on">
+      <div class="row">
+        <label>Your name<input name="name" required></label>
+        <label>Instagram handle<input name="instagram" placeholder="@" required></label>
+      </div>
+      <div class="row">
+        <label>WhatsApp number<input name="whatsapp" type="tel" required></label>
+        <label>Email<input name="email" type="email" required></label>
+      </div>
+      <label>What is your skill, and what do you sell?<textarea name="skill" rows="2" required></textarea></label>
+      <label>What real result have you got with your skill?<textarea name="result" rows="2" required></textarea></label>
+      <label>How many reels did you post last month?
+        <select name="reels" required><option value="">Choose one</option><option>None</option><option>1 to 5</option><option>6 to 15</option><option>More than 15</option></select></label>
+      <label>Can you post 5 reels a week for 90 days?
+        <select name="commit" required><option value="">Choose one</option><option>Yes</option><option>No</option></select></label>
+      <label>Why do you want to start now?<textarea name="why" rows="2"></textarea></label>
+      <button class="btn" type="submit">Next: pick a time</button>
+    </form>
+    <div class="calendar" id="calendar" hidden>
+      <div class="slot">The calendar to pick a time goes here</div>
+    </div>
   </div>
 </section>
 
@@ -298,7 +390,7 @@
         <div class="kicker">Astrologer · my first client</div>
         <div class="big">0 → 100K</div>
         <p>How I helped my first client ever grow her personal brand from 0 to 100K within 16 weeks.</p>
-        <p>I did everything, from writing to shooting to editing to posting. I did thorough competitor research. I didn't copy. I just took the format and learnt what works. Reels in the millions.</p>
+        <p>I did everything, from writing to shooting to editing to posting. I did thorough competitor research. I didn't copy. I just took the format and learnt what works.</p><p>Before: about 1,200 views a reel. After: 8.9M and 5.2M on single reels, and 10M views in one month.</p>
         <div class="slot">Follower growth screenshot, name blurred</div>
       </div>
       <div class="case">
@@ -355,9 +447,9 @@
   <div class="wrap">
     <div class="kicker">Next step</div>
     <h2>If you think this is you.</h2>
-    <p>DM me FILMS and I'll see if you are a fit for my programme.</p>
+    <p>Book a call, and I'll see if you are a fit for Act One.</p>
     <div class="ctas">
-      <a class="btn" href="https://ig.me/m/shi.nemaa__">DM me FILMS</a>
+      <a class="btn" href="#book">Book a call</a>
       <a class="btn ghost" href="https://media-cdn.cosmofeed.com/chat/The-Hook-Vault-SHINEMAA-Consults-2026-23-10-05-14-38.pdf">Get the free Hook Vault</a>
     </div>
   </div>
@@ -367,7 +459,7 @@
 
 <div class="sticky" id="sticky">
   <span>SHINEMAA Consults</span>
-  <a class="btn" href="https://ig.me/m/shi.nemaa__">DM me FILMS</a>
+  <a class="btn" href="#book">Book a call</a>
 </div>
 
 <script>
@@ -376,6 +468,11 @@
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
   els.forEach(e=>io.observe(e));
   setTimeout(()=>els.forEach(e=>e.classList.add('in')),2500);
+  const f=document.getElementById('apply');
+  f.addEventListener('submit',e=>{e.preventDefault();
+    // TODO: send answers to the booking tool, then show its calendar
+    f.hidden=true; document.getElementById('calendar').hidden=false;
+    document.getElementById('book').scrollIntoView({behavior:'smooth'});});
   const st=document.getElementById('sticky'), hero=document.querySelector('.hero');
   new IntersectionObserver(([e])=>st.classList.toggle('show',!e.isIntersecting)).observe(hero);
 </script>
