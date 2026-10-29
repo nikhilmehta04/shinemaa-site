@@ -170,6 +170,10 @@
   .vcom{width:240px}
   .flow .shot{aspect-ratio:9/16}
   .flow .note{aspect-ratio:9/16;flex-direction:column;gap:12px}
+  .vcard{aspect-ratio:9/16;border-radius:16px;background:linear-gradient(170deg,#FFFFFF,#EAF7F0);border:1px solid #CFE8DA;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:14px;box-shadow:0 14px 40px rgba(10,60,40,.12)}
+  .vlead{margin:0;text-align:center;font-weight:700;font-size:15px;line-height:1.35;color:#0b2a1c}
+  .vbubble{width:100%;border-radius:10px;display:block;cursor:pointer;box-shadow:0 6px 18px rgba(10,60,40,.18)}
+  .vhint{font-size:11.5px;font-weight:700;color:var(--emerald)}
   .flow video.vchat{width:100%;aspect-ratio:9/16;object-fit:cover;object-position:top;border-radius:16px;display:block;background:#0b141a;box-shadow:0 14px 40px rgba(10,60,40,.18)}
   .vnote{cursor:pointer;width:100%;font:inherit;color:var(--ink,#0b2a1c);font-weight:600}
   .vnote small{display:block;font-size:11.5px;font-weight:600;color:var(--emerald);margin-top:4px}
@@ -337,7 +341,7 @@
     <div class="flow">
       <figure><img class="shot" src="img/sukhi-before-2982.jpg" alt="Sukhi's reel before the hook change, 2,982 views"><figcaption>Bad hook · 2,982</figcaption></figure>
       <div class="arrow">→</div>
-      <figure><video class="shot vchat" src="media/sukhi-voice-chat.mp4" poster="media/sukhi-voice-chat-poster.jpg" controls playsinline preload="metadata"></video><figcaption>My voice note to him</figcaption></figure>
+      <figure><div class="shot vcard"><p class="vlead">The voice note I sent him before posting</p><video class="vbubble" src="media/sukhi-voice-bubble.mp4" poster="media/sukhi-voice-bubble-poster.jpg" playsinline preload="metadata"></video><span class="vhint">Tap to play · 0:20</span></div><figcaption>What I told him</figcaption></figure>
       <div class="arrow">→</div>
       <figure><img class="shot" src="img/sukhi-after-117k.jpg" alt="The same reel with the new hook, 117K views"><figcaption class="after">Good hook · 117K · day 2</figcaption></figure>
     </div>
@@ -614,6 +618,8 @@ document.querySelectorAll('.vnote').forEach(b=>{const a=b.parentElement.querySel
   b.addEventListener('click',()=>{if(a.paused){a.play();}else{a.pause();}});
   a.addEventListener('play',()=>{b.classList.add('on');p.textContent='❚❚'});
   const off=()=>{b.classList.remove('on');p.textContent='▶'};a.addEventListener('pause',off);a.addEventListener('ended',off);});
+
+document.querySelectorAll('.vbubble').forEach(v=>{const h=v.parentElement.querySelector('.vhint');v.addEventListener('click',()=>{v.paused?v.play():v.pause()});v.addEventListener('play',()=>h.textContent='Playing · tap to pause');v.addEventListener('pause',()=>h.textContent='Tap to play · 0:20');v.addEventListener('ended',()=>{v.currentTime=0;h.textContent='Tap to play · 0:20'})});
 </script>
 </body>
 </html>
