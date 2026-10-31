@@ -69,7 +69,7 @@
   /* 1 hero */
   .hero{position:relative;overflow:hidden;color:var(--white);background:radial-gradient(800px 520px at 20% 20%,rgba(18,183,106,.35),transparent 60%),radial-gradient(700px 600px at 90% 70%,rgba(92,240,168,.18),transparent 60%),linear-gradient(180deg,#041A11,var(--deep))}
   .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at 40% 30%,#000 30%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 40% 30%,#000 30%,transparent 75%)}
-  .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center;padding:56px 0 112px}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,860px);gap:56px;align-items:center;padding:56px 0 112px}
   .hero h1{font-size:clamp(40px,6.4vw,72px);margin:20px 0 22px}
   .shine{background:linear-gradient(100deg,#FFFFFF 0%,#FFFFFF 35%,#8BFFC8 48%,#FFFFFF 62%,#FFFFFF 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 6s ease-in-out infinite}
   .glowtext{color:var(--mint);text-shadow:0 0 28px rgba(92,240,168,.55)}
@@ -333,7 +333,6 @@
         </div>
         <p class="fastproof"><span class="dot"></span>Sukhi hit 117K after only 2 days in the programme. Vinay hit 24K after only 7 days in the programme.</p>
       </div>
-      <div class="portrait"><img src="nikhil.jpg" alt="Nikhil, founder of SHINEMAA Consults"></div>
     </div>
   </div>
 </header>
