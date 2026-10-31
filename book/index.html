@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book your call · SHINEMAA Consults</title>
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Book your call · SHINEMAA Consults">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--deep:#03120C;--emerald:#12B76A;--mint:#5CF0A8;--white:#FFFFFF}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{min-height:100vh;color:var(--white);font-family:"Plus Jakarta Sans","Helvetica Neue",Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+    background:radial-gradient(800px 520px at 20% 10%,rgba(18,183,106,.35),transparent 60%),radial-gradient(700px 600px at 90% 70%,rgba(92,240,168,.18),transparent 60%),linear-gradient(180deg,#041A11,var(--deep));background-attachment:fixed}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px 64px}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0}
+  .logo{font-weight:800;letter-spacing:.14em;font-size:15px}
+  .logo span{color:var(--mint);text-shadow:0 0 12px var(--mint)}
+  nav a{font-size:14px;color:inherit;text-decoration:none;font-weight:600;padding:8px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.04)}
+  .kicker{display:inline-flex;align-items:center;gap:8px;margin-top:32px;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--mint);padding:7px 14px;border-radius:999px;background:rgba(92,240,168,.08);border:1px solid rgba(92,240,168,.25)}
+  .kicker::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--mint);box-shadow:0 0 12px var(--mint)}
+  h1{font-size:clamp(32px,5vw,52px);font-weight:800;letter-spacing:-.03em;line-height:1.05;margin:16px 0 14px}
+  p{color:rgba(255,255,255,.75);max-width:62ch}
+  .calwrap{margin-top:32px;border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 0 60px rgba(18,183,106,.25)}
+  .calendly-inline-widget{min-width:280px;height:700px}
+  @media (max-width:1100px){.calendly-inline-widget{height:1060px}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo">SHINEMAA<span>.</span></div>
+      <a href="https://www.instagram.com/shi.nemaa__/">@shi.nemaa__</a>
+    </nav>
+    <div class="kicker">Book a call</div>
+    <h1>Book your call with me.</h1>
+    <p>Pick a time that works for you, then answer a few questions.</p>
+    <div class="calwrap">
+      <div class="calendly-inline-widget" data-url="https://calendly.com/nikhil-matics/growth-plan-call?hide_gdpr_banner=1&hide_landing_page_details=1&primary_color=12b76a"></div>
+    </div>
+  </div>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</body>
+</html>
